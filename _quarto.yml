@@ -2,10 +2,10 @@ project:
   type: book
 
 book:
-  title: "Beech Thesis"
-  author: "Binyao Yang"
+  title: "Title of Your Work"
+  author: "Your Name"
   date: "30/06/2025"
-  chapters:
+  chapters:  # List of chapters in the book, if you have new chapters, add them here
     - index.qmd
     # - intro.qmd
     - chapter1/chapter1.qmd
@@ -17,7 +17,7 @@ book:
 
 
 
-format:
+format:  # Define the output formats for the book
   html:
     theme:
       - cosmo

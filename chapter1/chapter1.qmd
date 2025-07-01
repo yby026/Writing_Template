@@ -1,40 +1,21 @@
 ---
 title: "Chapter 1 – Challenges of deep learning in ecology"
 bibliography: ref.bib
-# csl: csl\apa.csl
+# csl: csl\apa.csl  # use if you have a template for citations
 
 format:
   html:
     comments:
-      hypothesis: true
+      hypothesis: true  # use Hypothesis for annotations and highlights, which can be viewed in the browser and used as collaboration tool
 
   latex:
     documentclass: article
     keep-tex: true  # or 'comments: hypothesis: true' if per-page
 ---
 
-*This is a draft chapter for the chapter 1*
+*This is a template for writing*
 
-## Deep learning in GIS
+## 标题写在这里，标题分级用#，## 或者###，一级标题用#，二级标题用##，三级标题用###，依次类推 （#后面要加空格）
 
-Deep learning (DL) is a type of machine learning (ML) that contains multiple hidden layers which enable the model to be used in transfer learning efficiently. DL models resemble the human brain neural network, where each input data (node) is passed down into the subsequent layers (neurons) within the model for pattern learning and applied to activation function to produce the output. The activation function enables the non-linearity of the model, and different activation functions can impact the performance of the same model. DL models contain both forward and backward iteration that will adjust the weight between different neurons during the training to determine the highest probability matching the input data. There are several different types of deep learning models, often referred to as Artificial Neural Networks (ANN), including Autoencoder, Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs), and Deep Neural Networks (DNNs), Transfer Networks, Feedforward Neural Networks (FNNs), and Generative Adversarial Networks (GANs) **(ref)**. With the development of neural networks, current models have more hidden (deep) layers compared to more traditional networks, which the ability of pattern recognition and generalisation have greatly improved **(ref)**. Like traditional machine learning, DL models also can be classified into unsupervised learning and supervised learning. The major difference between unsupervised learning and supervised learning is the requirement of data labelling. As supervised DL models tend to classify the targets into either foreground or background, while the foreground is the training classes (training scheme) for the task, proving comprehensive labelling of foreground classes is essential to avoid data being passed down the background and not included in the classification process **(ref)**. Unsupervised classification does not use preset classes to classify targets from images, but cluster targets into groups based on similarity. Compared to supervised DL models, unsupervised models do not need data labelling, which limited the ability of classification, but have a greater potential in exploring the patterns and relationship of the dataset **(ref)**.
+正文直接写就行
 
-GIS techniques are widely used in land cover and land use (LCLU) studies, which plays an essential role in analysing and mapping the earth environment with different field of studies, including ecology, forestry, agriculture, mining, and urban planning [@qinReviewLandcoverClassification2022]. Putty *et al.* grouped the these techniques into two categories, the framework dependent and independent mapping, while the former describes the process and algorithms that are relied on existing software products and built-in classifiers, and the latter are the stand-alone algorithms, which mostly are deep learning models [@puttySemanticSegmentationRemotely2025]. Most framework dependent mapping are using traditional ML algorithms, such as random forest, support vector machine, and maximum likelihood, which generally includes the steps of manual extraction of feature signatures. Framework independent mapping, especially DL models, automatically learns the features. However, most DL models are developed for only green, red, blue channel images, which is a great drawback compared to traditional algorithms that are based on spectral signatures. 
-
-## Deep learning in forest studies
-
-GIS in forest studies often involves image segmentation and classification. As CNNs are specialised in image processing, the application of such models becoming useful to transfer studies from smaller scale to larger scale.
-
-*Landscape scale*
-
-*Regional scale*
-
-Individual tree scale studies in forest had always been limited to plot studies as it is expensive to conduct large scale study, and thus studies like biodiversity mapping is highly depended on sampling methods
-
-Most studies with DL are conducted in conifer and pine forests, which is a high productivity forest and valuable for forestry. Compared to other forest types, conifers and pines have regular shaped crowns, which the crown characteristics is more uniformed across landscape. The similarity of crown shapes and the clear crown boundaries ensured that the individual crown
-
-## Species diversity
-
-## Forest variability
-
-## GPS accuracy and ground truth

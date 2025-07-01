@@ -24,19 +24,23 @@ print("Hello, World!")
 如果要加citations， 用@后面跟上引用的key，例如：@Smith2020，用插件Zetero Cite可以自动生成引用，可以自己添加快捷键，但必须要有zetero和better-bibtex插件
 
 ## 快捷键列表：
-ctrl+shift+P 打开命令面板
-ctrl+shift+C 打开代码块
-ctrl+. 直接打开拼写检查
+* ctrl+shift+P 打开命令面板
+* ctrl+shift+C 打开代码块
+* ctrl+. 直接打开拼写检查
 
-Notes_some_simple_lines.md 里有我添加的一点quarto和pandoc代码行笔记
 
 ## 文章结构设置和format
 从_quarto.yml里面设置全局
+
 每篇文章（每个.qmd文件）都可以有自己的设置
 
 ## 插件
-python
-LTeX+ 拼写检查
-Zotero Cite 引用管理
-Quarto
-别的按需添加
+* python
+* LTeX+ 拼写检查
+* Zotero Cite 引用管理
+* Quarto
+* 别的按需添加
+
+
+## 其他
+Notes_some_simple_lines.md 里有我添加的一点quarto和pandoc代码行笔记

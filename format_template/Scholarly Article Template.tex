@@ -1,0 +1,77 @@
+\documentclass[10pt]{article}
+
+% ———————————————— Packages ————————————————
+\usepackage{fullpage}
+\usepackage{CJKutf8}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage[section]{placeins}
+\usepackage{xcolor}
+\usepackage{breakcites}
+\usepackage{lineno}
+\usepackage{hyphenat}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\@combinedblfloats{\box\@outputbox}{\unvbox\@outputbox}{}{\errmessage{\noexpand\@combinedblfloats could not be patched}}
+\makeatother
+\usepackage{natbib}
+\usepackage{authblk}
+\usepackage{graphicx}
+\usepackage[space]{grffile}
+\usepackage{latexsym}
+\usepackage{textcomp}
+\usepackage{longtable}
+\usepackage{tabulary}
+\usepackage{booktabs,array,multirow}
+\usepackage{amsfonts,amsmath,amssymb}
+\providecommand\citet{\cite}
+\providecommand\citep{\cite}
+\providecommand\citealt{\cite}
+\newif\iflatexml\latexmlfalse
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\AtBeginDocument{\DeclareGraphicsExtensions{.pdf,.PDF,.eps,.EPS,.png,.PNG,.tif,.TIF,.jpg,.JPG,.jpeg,.JPEG}}
+\usepackage[english]{babel}
+\usepackage{float}
+
+% ———————————————— Metadata ————————————————
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+
+% Title, author, date
+\title{$if(title)$$title$$else$Untitled$endif$}
+$if(author)$
+  \author{
+    $for(author)$$author.name$$sep$ \and $endfor$
+  }
+$endif$
+\date{$if(date)$$date$$else$\today$endif$}
+
+% Print title block
+\maketitle
+
+% Abstract (if present)
+$if(abstract)$
+  \begin{abstract}
+  $abstract$
+  \end{abstract}
+$endif$
+
+% ———————————————— Main content ————————————————
+$body$
+
+% ———————————————— References (Natbib) ————————————————
+$if(bibliography)$
+  \bibliographystyle{$if(biblio-style)$$biblio-style$$else$plain$endif$}
+  \bibliography{$for(bibliography)$$bibliography$$sep$,$endfor$}
+$endif$
+
+\end{CJK}
+\end{document}

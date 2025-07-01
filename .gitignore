@@ -1,0 +1,6 @@
+/.quarto/
+_book/
+.quarto/
+*.bak
+.vscode/
+

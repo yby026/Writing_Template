@@ -1,0 +1,13 @@
+# Ensure LF in the repo, but let Windows check out as CRLF
+* text=auto
+
+# Quarto/YAML/Markdown should always be LF in repo
+*.qmd text
+*.md  text
+*.yml text
+*.bib text
+
+# Binary files (images, data) shouldn’t be touched
+*.png binary
+*.jpg binary
+*.pdf binary

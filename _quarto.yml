@@ -1,0 +1,37 @@
+project:
+  type: book
+
+book:
+  title: "Beech Thesis"
+  author: "Binyao Yang"
+  date: "30/06/2025"
+  chapters:
+    - index.qmd
+    # - intro.qmd
+    - chapter1/chapter1.qmd
+    # - chapter2/chapter2.qmd
+    # - chapter3/chapter3.qmd
+    # - chapter4/chapter4.qmd
+    # - summary.qmd
+    # - references.qmd
+
+
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    # documentclass: scrreprt
+    template: format_template\Scholarly Article Template.tex
+    keep-tex: true  # Keep the .tex file for debugging
+
+  latex:
+    documentclass: book
+    template: format_template\Scholarly Article Template.tex
+    toc: true  # Enable table of contents in LaTeX
+    keep-tex: true  # Keep the .tex file for debugging
+
+
+

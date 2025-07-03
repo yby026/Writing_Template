@@ -1,4 +1,4 @@
-# Writing template with Quarto as management system
+# 用Quarto作为写作管理工具，某种程度上彻底告别MS Word的全开源方案
 
 **本模板使用Quarto作为管理系统， 需要安装[Quarto](https://quarto.org/docs/get-started/)，之后可以在VS Code, R Studio, 或者Jupyter上使用。本模板时完全建立在VS Code之上的**
 

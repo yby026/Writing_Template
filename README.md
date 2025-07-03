@@ -25,7 +25,7 @@ print("Hello, World!")
 ```
 如果要加行内代码， 用一个反引号包裹起来：`print("Hello, World!")`
 
-如果要加链接， 用方括号包裹链接文本，后面跟上圆括号包裹链接地址：[链接文本](https://example.com)
+如果要加链接， 用方括号包裹链接文本，后面跟上圆括号包裹链接地址：[链接文本](https://example.com） [链接文本](https://example.com)
 
 如果要加citations， 用@后面跟上引用的key，例如：@Smith2020，用插件Zetero Cite可以自动生成引用，可以自己添加快捷键，但必须要有zetero和better-bibtex插件
 

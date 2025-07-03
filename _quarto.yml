@@ -4,14 +4,11 @@ project:
 book:
   title: "Title of Your Work"
   author: "Your Name"
-  date: "30/06/2025"
+  date: "date"
   chapters:  # List of chapters in the book, if you have new chapters, add them here
     - index.qmd
     # - intro.qmd
-    - chapter1/chapter1.qmd
-    # - chapter2/chapter2.qmd
-    # - chapter3/chapter3.qmd
-    # - chapter4/chapter4.qmd
+    - Example_chapters/Example.qmd
     # - summary.qmd
     # - references.qmd
 
